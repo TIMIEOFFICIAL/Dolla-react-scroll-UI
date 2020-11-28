@@ -1,5 +1,12 @@
 import React from "react";
 import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import {
   FooterContainer,
   FooterWrap,
   FooterLinksContainer,
@@ -7,6 +14,12 @@ import {
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialLink,
 } from "./FooterElement";
 const Footer = () => {
   return (
@@ -44,13 +57,33 @@ const Footer = () => {
               <FooterLink to="/">Facebook</FooterLink>
               <FooterLink to="/">Youtube</FooterLink>
               <FooterLink to="/">Twitter</FooterLink>
+              <FooterLink to="/">Linkedin</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/">dolla</SocialLogo>
-            <WebsiteRights>dolla © {new Date().getFullYear()}</WebsiteRights>
+            <WebsiteRights>
+              dolla © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights>
+            <SocialIcons>
+              <SocialLink href="/" target="_blank" aria-label="Facebook">
+                <FaFacebook />
+              </SocialLink>
+              <SocialLink href="/" target="_blank" aria-label="Twitter">
+                <FaTwitter />
+              </SocialLink>
+              <SocialLink href="/" target="_blank" aria-label="Instagram">
+                <FaInstagram />
+              </SocialLink>
+              <SocialLink href="/" target="_blank" aria-label="Youtube">
+                <FaYoutube />
+              </SocialLink>
+              <SocialLink href="/" target="_blank" aria-label="Linkedin">
+                <FaLinkedin />
+              </SocialLink>
+            </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
