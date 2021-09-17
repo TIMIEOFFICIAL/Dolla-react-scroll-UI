@@ -13,7 +13,6 @@ import {
 } from "./HeroElements";
 import { Button } from "../ButtonElement";
 
-
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
@@ -26,11 +25,8 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
-        <HeroP>
-          Sign up for a new account today and recieve $250 in credit towards
-          your next payment.
-        </HeroP>
+        <HeroH1>TIMIE OFICIAL</HeroH1>
+        <HeroP>Descubre la vida que quieres tener</HeroP>
         <HeroBtnWrapper>
           <Button
             to="signup"
@@ -39,7 +35,7 @@ const HeroSection = () => {
             primary="true"
             dark="true"
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Más información {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
